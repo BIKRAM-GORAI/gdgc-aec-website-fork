@@ -12,6 +12,7 @@ import {
   ShieldCheck,
   GitPullRequest,
   ExternalLink,
+  ArrowUpRight,
 } from "lucide-react";
 import { ContributionRecord } from "@/lib/openOrbit/types";
 
@@ -196,7 +197,6 @@ export default function LeaderboardPage() {
   const remainingEntries = filteredEntries.slice(3);
 
   const TARGET_REPO_URL = "https://github.com/GDGCampusAEC/gdgc-aec-website";
-  const TARGET_REPO_NAME = "GDGCampusAEC/gdgc-aec-website";
 
   return (
     <main className="min-h-screen bg-[#FDFBF7] text-slate-800 font-sans pt-28 sm:pt-32 pb-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden selection:bg-[#56CF16]/20">
@@ -252,27 +252,23 @@ export default function LeaderboardPage() {
             </motion.h1>
           </div>
 
-          {/* Pill-shaped box with a very black border containing the repository link */}
+          {/* Compact pill-shaped box with black border containing Contributing Repository link */}
           <motion.div
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.12 }}
-            className="relative z-10 max-w-full px-2"
+            className="relative z-10 px-2"
           >
             <a
               href={TARGET_REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex flex-wrap items-center justify-center gap-2 px-4 sm:px-5 py-1.5 sm:py-2 rounded-full bg-white hover:bg-slate-50 text-black border-2 border-black shadow-xs transition-all group hover:scale-[1.01]"
+              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-1 rounded-full bg-white hover:bg-slate-50 text-black border-[1.5px] border-black shadow-2xs transition-all group hover:scale-[1.02] cursor-pointer"
             >
-              <GithubIcon className="w-4 h-4 text-black shrink-0" />
-              <span className="text-xs sm:text-sm font-bold text-slate-800">
-                Contributing Repository:
+              <span className="text-xs sm:text-[13px] font-semibold text-black tracking-tight select-none">
+                Contributing Repository
               </span>
-              <span className="text-xs sm:text-sm font-mono font-bold text-black underline decoration-black/60 group-hover:text-black break-all sm:break-normal">
-                {TARGET_REPO_NAME}
-              </span>
-              <ExternalLink size={13} className="text-black/80 group-hover:text-black shrink-0 transition-colors ml-0.5" />
+              <ArrowUpRight size={14} className="text-black stroke-[2.2] shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </motion.div>
 
