@@ -263,7 +263,7 @@ export default function LeaderboardPage() {
               href={TARGET_REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-1 rounded-full bg-gradient-to-b from-white via-[#F1F5F9] to-[#E2E8F0] hover:from-[#F8FAFC] hover:to-[#CBD5E1] text-black border-[1.5px] border-black shadow-2xs transition-all group hover:scale-[1.02] cursor-pointer"
+              className="inline-flex items-center justify-center gap-1.5 px-3.5 py-1 rounded-full bg-white hover:bg-slate-50 text-black border-[1.5px] border-black shadow-2xs transition-all group hover:scale-[1.02] cursor-pointer"
             >
               <span className="text-xs sm:text-[13px] font-semibold text-black tracking-tight select-none">
                 Contributing Repository
@@ -278,7 +278,7 @@ export default function LeaderboardPage() {
             transition={{ delay: 0.14 }}
             className="max-w-2xl text-sm sm:text-base text-slate-600 font-medium leading-relaxed px-4"
           >
-            Contribute to official GDGC AEC repositories, submit merged pull requests, and climb the live community leaderboard!
+            Contribute to official GDGC AEC repository, submit  pull requests, and climb the live community leaderboard!
           </motion.p>
         </div>
 
@@ -395,7 +395,7 @@ export default function LeaderboardPage() {
                         </div>
 
                         <p className="text-[11px] text-slate-500 font-medium">
-                          Contribute to repositories, raise PRs and earn points!
+                          Contribute to repository, raise PRs and earn points!
                         </p>
                       </div>
                     </div>
